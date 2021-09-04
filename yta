@@ -1,0 +1,3 @@
+#!/bin/sh
+
+youtube-dl -f m4a $1

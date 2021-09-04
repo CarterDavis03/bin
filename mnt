@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo mount -o uid=1000,gid=998,rw $1 /mnt

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+youtube-dl -f mp4 $1
