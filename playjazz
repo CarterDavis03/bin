@@ -7,4 +7,4 @@ pkill mpv ; pkill mpv ; pkill mpv
 TRACKNO=$((  $RANDOM % 8 + 1 ))
 
 # Play the Jazz
-mpv ~/Music/BGM-Jazz/track$TRACKNO\.mp3 --volume=15 --loop --start=$(($RANDOM % 75 + 1))% &
+mpv ~/Music/BGM-Jazz/track$TRACKNO\.mp3 --volume=17 --loop --start=$(($RANDOM % 75 + 1))% &
