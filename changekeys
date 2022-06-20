@@ -1,8 +1,11 @@
 #!/bin/sh
 
+setxkbmap gb
+
 while true; do
     #Set caps to escape
     setxkbmap -option caps:escape
+    #setxkbmap -option esperanto:qwerty
 
     #Change re-press speed
     xset r rate 300 50
