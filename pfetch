@@ -3,7 +3,12 @@
 # pfetch - Simple POSIX sh fetch script.
 
 # ---CHANGES FROM ORIGINAL---
-# - Manjaro ascii art changed to Arch logo
+# ASCII art has been changed to match that of uwufetch
+# Info shown has been reduced
+
+# ----LINK TO ORIGINAL----
+# https://github.com/dylanaraps/pfetch
+# THANK YOU FOR YOUR APP <3
 
 log() {
     # The 'log()' function handles the printing of information.
@@ -289,8 +294,8 @@ get_kernel() {
     case $os in
         # Don't print kernel output on some systems as the
         # OS name includes it.
-        *BSD*|Haiku|Minix) 
-            return 
+        *BSD*|Haiku|Minix)
+            return
         ;;
     esac
 
@@ -415,7 +420,7 @@ get_uptime() {
 
             # Split the pretty output into days or hours
             # based on the uptime.
-            case $t in 
+            case $t in
                 *-*)   d=${t%%-*} t=${t#*-} ;;
                 *:*:*) h=${t%%:*} t=${t#*:} ;;
             esac
@@ -739,10 +744,10 @@ get_memory() {
             # Example output: Memory: 160M max, 147M avail, .....
             while IFS=' :' read -r label mem_full _ mem_free _; do
                 case $label in
-                    Memory) 
+                    Memory)
                         mem_full=${mem_full%M}
                         mem_free=${mem_free%M}
-                        break 
+                        break
                     ;;
                 esac
             done <<-EOF
@@ -918,7 +923,7 @@ get_palette() {
 
     # Print the palette with a new-line before and afterwards.
     printf '\n' >&6
-    log "$palette 
+    log "$palette
         " " " >&6
 }
 
@@ -986,7 +991,7 @@ get_ascii() {
 				${c6}       /\\
 				${c6}      /  \\
 				${c6}     /\\   \\
-				${c4}    /      \\
+				${c4}    / > ω <\\
 				${c4}   /   ,,   \\
 				${c4}  /   |  |  -\\
 				${c4} /_-''    ''-_\\
