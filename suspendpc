@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/home/carter/.bin/blurlock &
+setxkbmap gb
+sleep 1
+sudo systemctl suspend
+
+# Things to run once awakened
+sleep 15
+bluetoothctl power on
