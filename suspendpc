@@ -3,7 +3,7 @@
 blurlock &
 setxkbmap gb &
 pkill xidlehook &
-sleep 1
+sleep 2
 sudo systemctl suspend
 
 # Things to run once awakened
