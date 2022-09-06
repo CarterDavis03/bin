@@ -1,6 +1,6 @@
 #!/bin/sh
 
-setxkbmap gb
+setxkbmap us
 
 while true; do
     #Set caps to escape

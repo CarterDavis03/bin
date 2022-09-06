@@ -1,7 +1,6 @@
 #!/bin/bash
 
 blurlock &
-setxkbmap gb &
 pkill xidlehook &
 sleep 2
 sudo systemctl suspend
