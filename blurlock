@@ -4,6 +4,6 @@ RES=$(xrandr | grep 'current' | sed -E 's/.*current\s([0-9]+)\sx\s([0-9]+).*/\1x
 
 setxkbmap us
 ffmpeg -f x11grab -draw_mouse 0 -video_size $RES -y -i $DISPLAY -filter_complex "boxblur=10:4" -vframes 1 $TMPBG -loglevel quiet
-sleep 1
+sleep 0.1
 i3lock -i $TMPBG -n; screenon
 rm $TMPBG
