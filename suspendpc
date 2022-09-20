@@ -8,4 +8,4 @@ sudo systemctl suspend
 # Things to run once awakened
 sleep 15
 bluetoothctl power on &
-xidlehook --not-when-fullscreen --not-when-audio --timer 300 blurlock '' &
+nohup xidlehook --not-when-fullscreen --not-when-audio --timer 300 blurlock '' >> /dev/null &
