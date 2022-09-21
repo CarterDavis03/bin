@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pandoc input.md -t beamer -o output.pdf --slide-level 2 --citeproc
