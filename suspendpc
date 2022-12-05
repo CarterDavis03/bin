@@ -1,11 +1,12 @@
 #!/bin/bash
 
-blurlock &
+bluetoothctl power off &
 pkill xidlehook &
+blurlock &
 sleep 2
 sudo systemctl suspend
 
 # Things to run once awakened
 sleep 15
-bluetoothctl power on &
+#bluetoothctl power on &
 nohup xidlehook --not-when-fullscreen --not-when-audio --timer 300 blurlock '' >> /dev/null &
